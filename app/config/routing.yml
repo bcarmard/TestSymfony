@@ -1,0 +1,8 @@
+bcarmard_test_i_advize:
+    resource: "@BcarmardTestIAdvizeBundle/Resources/config/routing.yml"
+    prefix:   /bc
+
+posts:
+    type: rest
+    resource: Bcarmard\TestIAdvizeBundle\Controller\RestController
+    prefix: /api

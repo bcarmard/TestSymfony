@@ -1,0 +1,32 @@
+{# src/Bcarmard/TestIAdvizeBundle/Resources/views/layout.html.twig #}
+
+{% extends "::base.html.twig" %}
+{% block title %}
+       {{ parent() }} - TestIAdvizeBundle
+{% endblock %}
+
+{% block stylesheets %} 
+    {{ parent() }} 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+{% endblock %}
+
+
+
+{% block body %}
+    {{ parent() }}
+    <div class="container theme-showcase" role="main">
+        {% block contenu %} {% endblock %}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }} 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+{% endblock %}

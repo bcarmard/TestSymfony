@@ -1,0 +1,9 @@
+bcarmard__apivdm_home:
+    pattern: /apivdm
+    defaults: { _controller: BcarmardTestIAdvizeBundle:ApiVdm:index }
+    
+    
+bcarmard__apivdm_load:
+    pattern: /apivdm/load
+    defaults: { _controller: BcarmardTestIAdvizeBundle:ApiVdm:load }
+    
