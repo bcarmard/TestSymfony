@@ -8,7 +8,7 @@ Commandes de base :
 Utilisation de l'api :
 
 ~/api/posts :
-        retourne les 200 vdm stockées en bdd au format suivant :
+    retourne les 200 vdm stockées en bdd au format suivant :
 
         {
           "posts": [
@@ -20,19 +20,19 @@ Utilisation de l'api :
               },...
         }
 
-        Paramètres :
-          ● from (optionnel) -­ Date de début
-          ● to (optionnel) -­ Date de fin
-          ● author (optionnel) -­ Auteur
+    Paramètres :
+      ● from (optionnel) -­ Date de début
+      ● to (optionnel) -­ Date de fin
+      ● author (optionnel) -­ Auteur
 
-        Utilisation :
-          ● /api/posts
-          ● /api/posts?from=2014-­01-­01&to=2014-­12-­31
-          ● /api/posts?author=Genius
+    Utilisation :
+      ● /api/posts
+      ● /api/posts?from=2014-­01-­01&to=2014-­12-­31
+      ● /api/posts?author=Genius
 
 /api/posts/<id>  :
 
-        Retourne la vdm dont l'id correspond au format suivant : 
+    Retourne la vdm dont l'id correspond au format suivant : 
 
         {
           "post": {
