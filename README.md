@@ -30,15 +30,15 @@ Utilisation de l'api :
       ● /api/posts?from=2014-­01-­01&to=2014-­12-­31
       ● /api/posts?author=Genius
 
-/api/posts/<id>  :
+~/api/posts/<id>  :
 
     Retourne la vdm dont l'id correspond au format suivant : 
 
         {
           "post": {
               "id": 4,
-              "contenu": "Aujourd'hui, je m'arrête à la boulangerie pour acheter un demi-pain et le laisse à l'arrière de la voiture avec ma fille de 6 ans. J'avais juste oublié que cette dernière raffolait de la mie du pain. Arrivées à la maison, il ne restait plus que la croûte. VDM",
-              "auteur": "miammie",
+              "contenu": "Aujourd'hui, blablabla. VDM",
+              "auteur": "Auteur",
               "date": "2014-11-26T00:00:00+0100"
           }
         }
