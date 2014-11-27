@@ -1,3 +1,52 @@
+Application qui utilise cURL pour récupérer les 200 dernières VDM du site http://www.viedemerde.fr/
+Puis les stocke en base de données afin de les mettre à disposition via une API rest.
+
+Commandes de base :
+~/bc/apivdm  : liste les vdm actuellement stockées dans votre base de données et propose un lien pour actualiser ces dernières.
+~/bc/apivdm/load : Vide la base de données, récupère les 200 dernières vdm, et redirige vers la page d'affichage.
+
+Utilisation de l'api :
+
+~/api/posts :
+        retourne les 200 vdm stockées en bdd au format suivant :
+
+        {
+          "posts": [
+              {
+                  "id": 1,
+                  "contenu": "Aujourd’hui, blablabla.” VDM",
+                  "auteur": "Anonyme",
+                  "date": "2014-11-27T00:00:00+0100"
+              },...
+        }
+
+        Paramètres :
+          ● from (optionnel) -­ Date de début
+          ● to (optionnel) -­ Date de fin
+          ● author (optionnel) -­ Auteur
+
+        Utilisation :
+          ● /api/posts
+          ● /api/posts?from=2014-­01-­01&to=2014-­12-­31
+          ● /api/posts?author=Genius
+
+/api/posts/<id>  :
+
+        Retourne la vdm dont l'id correspond au format suivant : 
+
+        {
+          "post": {
+              "id": 4,
+              "contenu": "Aujourd'hui, je m'arrête à la boulangerie pour acheter un demi-pain et le laisse à l'arrière de la voiture avec ma fille de 6 ans. J'avais juste oublié que cette dernière raffolait de la mie du pain. Arrivées à la maison, il ne restait plus que la croûte. VDM",
+              "auteur": "miammie",
+              "date": "2014-11-26T00:00:00+0100"
+          }
+        }
+
+
+
+=========================
+
 Symfony Standard Edition
 ========================
 
