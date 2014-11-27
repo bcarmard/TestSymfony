@@ -85,6 +85,8 @@ fos_rest:
             html: true
         failed_validation: HTTP_BAD_REQUEST
         default_engine: twig
+        mime_types:
+            json: ['application/json; charset=UTF-8', 'application/json']
     routing_loader:
         default_format: json
 
@@ -92,3 +94,8 @@ fos_rest:
 #Config sensio framework extra
 sensio_framework_extra:
     view:    { annotations: false }
+    
+jms_serializer:
+    visitors:
+        json:
+            options: [JSON_UNESCAPED_SLASHES, JSON_UNESCAPED_UNICODE, JSON_PRETTY_PRINT]
