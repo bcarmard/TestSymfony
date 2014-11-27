@@ -29,6 +29,7 @@ Utilisation de l'api :
       ● /api/posts
       ● /api/posts?from=2014-­01-­01&to=2014-­12-­31
       ● /api/posts?author=Genius
+    Toute requête ne respectant pas ce format sera ignorée et la requete exécutée sera "/api/posts"
 
 ~/api/posts/<id>  :
 

@@ -22,7 +22,7 @@ class RestController extends FOSRestController
     /**
      * @QueryParam(name="from", requirements="^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$", default="1", description="Date de début.")
      * @QueryParam(name="to", requirements="^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$", default="1", description="Date de fin.")
-     * @QueryParam(name="author", requirements="^\w+\s\w+$", default="1", description="Auteur")
+     * @QueryParam(name="author", requirements="^[A-Za-z0-9 _]*[A-Za-z0-9][A-Za-z0-9 _]*$", default="1", description="Auteur")
      * @param ParamFetcher $paramFetcher
      */
     public function getPostsAction(ParamFetcher $paramFetcher)
