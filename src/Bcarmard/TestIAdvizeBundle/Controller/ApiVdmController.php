@@ -43,7 +43,7 @@ class ApiVdmController extends Controller
         //a raison de 13 vdm/page 200/13 = 15.38 donc doit récupérer les vdm des 16 premières pages
         for($ii=0; $ii<16; $ii++)
         {
-            //Récup du contenu de la page $ii
+            //Récup du contenu de la page $ii à l'aide de cURL
             $url = 'http://m.viedemerde.fr/?page='.$ii.'';	
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
@@ -99,7 +99,7 @@ class ApiVdmController extends Controller
         }
 
         //redirection vers l'index
-        return $this->redirect($this->generateUrl('bcarmard__apivdm_home'));
+        return $this->redirect($this->generateUrl('bcarmard_apivdm_home'));
         
 
     }

@@ -2,7 +2,9 @@ Application qui utilise cURL pour récupérer les 200 dernières VDM du site htt
 Puis les stocke en base de données afin de les mettre à disposition via une API rest.
 
 Commandes de base :
+
 ~/bc/apivdm  : liste les vdm actuellement stockées dans votre base de données et propose un lien pour actualiser ces dernières.
+
 ~/bc/apivdm/load : Vide la base de données, récupère les 200 dernières vdm, et redirige vers la page d'affichage.
 
 Utilisation de l'api :
@@ -30,6 +32,7 @@ Utilisation de l'api :
       ● /api/posts?from=2014-­01-­01&to=2014-­12-­31
       ● /api/posts?author=Genius
     Toute requête ne respectant pas ce format sera ignorée et la requete exécutée sera "/api/posts"
+    Attention l'adresse /api/posts/ ne fonctionnera pas.
 
 ~/api/posts/<id>  :
 
