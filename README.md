@@ -19,7 +19,15 @@ Utilisation de l'api :
                   "contenu": "Aujourd’hui, blablabla.” VDM",
                   "auteur": "Anonyme",
                   "date": "2014-11-27T00:00:00+0100"
+              },
+             {
+                  "id": 2,
+                  "contenu": "Aujourd'hui, blablabla VDM",
+                  "auteur": "anonyme",
+                  "date": "2014-11-27T00:00:00+0100"
               },...
+          ],
+          "count": 2
         }
 
     Paramètres :
